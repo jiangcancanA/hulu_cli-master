@@ -1,0 +1,306 @@
+* {
+	box-sizing: border-box;
+}
+view {
+	box-sizing: border-box;
+}
+/* flex 两端对齐 */
+.flex_b {
+	display: flex;
+	justify-content: space-between;
+}
+/* flex */
+.flex_a {
+	display: flex;
+}
+
+/* 水平居中 */
+.flex_c {
+	display: flex;
+	justify-content: center;
+}
+
+/* 垂直两端对齐 */
+.flex_d {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* 换行显示 */
+.flex_e {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* 垂直居中对齐 */
+.flex_f {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+/* 验证按钮 */
+.yanBoder {
+	text-align: center;
+	padding: 0 10rpx;
+	border: 2rpx solid #171731;
+	font-family: MiSans;
+	font-size: 28rpx;
+	font-weight: normal;
+	color: #171731;
+	width: 300rpx;
+	border-radius: 40rpx;
+	cursor: pointer;
+}
+
+.yanBoder.disabled {
+	background-color: #ccc;
+	color: #666;
+	cursor: not-allowed;
+}
+
+/* 全局 input 样式 */
+.inpukang {
+	border-radius: 60rpx;
+	padding: 24rpx;
+	background: #ffffff;
+}
+
+/* input 输入文字 */
+.inputTxt {
+	color: #000;
+	margin-left: 10rpx;
+}
+
+/* input Placeholder */
+.inputPlaceholder {
+	font-family: MiSans;
+	font-size: 28rpx;
+	display: flex;
+	align-items: center;
+	color: rgba(23, 26, 29, 0.4);
+}
+
+/* 全局背景框 */
+.quankuang {
+	width: 100%;
+	border-radius: 20rpx;
+	padding: 47rpx;
+	background: #282e47;
+	box-sizing: border-box;
+}
+
+/* 大标题 LargeTitle/Bold */
+.titleTxtBlod {
+	font-family: MiSans;
+	font-size: 48rpx;
+	font-weight: 600;
+	line-height: 68rpx;
+	color: #ffffff;
+}
+
+/* 标题一 */
+.titleTxt {
+	font-family: MiSans;
+	font-size: 28rpx;
+	font-weight: 600;
+	color: #ffffff;
+}
+
+/* 菜单左侧图标 */
+.me_lefticon {
+	width: 14.5rpx;
+	height: 30rpx;
+	opacity: 1;
+}
+
+/* 标题提示 */
+.titleTxtTips {
+	font-family: MiSans;
+	font-size: 28rpx;
+	color: #ffffff;
+}
+/* 字体颜色 */
+.allColor {
+	font-family: MiSans;
+	letter-spacing: 0em;
+	font-variation-settings: 'opsz' auto;
+	font-feature-settings: 'kern' on;
+	color: #ffffff;
+}
+.color5B {
+	color: #5b93ac;
+}
+.colorF7 {
+	color: #f7f7f7;
+}
+.color90 {
+	color: #909090;
+}
+.colorA1 {
+	color: #a1a0b6;
+}
+.allBold {
+	font-weight: bold;
+}
+.fontSize28 {
+	font-size: 28rpx;
+}
+.fontSize24 {
+	font-size: 24rpx;
+}
+.fontSize20 {
+	font-size: 20rpx;
+}
+.fontSize18 {
+	font-size: 18rpx;
+}
+/* 全局 margin-top */
+.marginLeft10 {
+	margin-left: 10rpx;
+}
+.margin5 {
+	margin-top: 5rpx;
+}
+
+.margin10 {
+	margin-top: 10rpx;
+}
+
+.margin20 {
+	margin-top: 20rpx;
+}
+
+.margin30 {
+	margin-top: 30rpx;
+}
+
+.margin50 {
+	margin-top: 55rpx;
+}
+
+/* 全局 padding */
+.quanpading {
+	padding: 30rpx 20rpx;
+}
+
+/* 用户头像 */
+.touxianImg {
+	width: 108rpx;
+	height: 108rpx;
+	border-radius: 50%;
+	border: 2rpx solid #fff;
+	box-shadow: 0 4rpx 8rpx rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	object-fit: cover;
+}
+
+.touxianImg:hover {
+	transform: rotate(360deg);
+	box-shadow: 0 6rpx 12rpx rgba(0, 0, 0, 0.3);
+}
+
+/* 全局按钮 */
+.quanBut {
+	text-align: center;
+	height: 88rpx;
+	background: linear-gradient(90deg, #307072 2%, #3b5d87 100%);
+	border-radius: 906px;
+	line-height: 88rpx;
+	cursor: pointer;
+}
+
+.quanBut.disabled {
+	background-color: #ccc;
+	color: #666;
+	cursor: not-allowed;
+}
+
+/* 基础菜单项样式 */
+.menu-item {
+	width: 270rpx;
+	height: 94rpx;
+	border-radius: 906px;
+	text-align: center;
+	line-height: 94rpx;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+/* 选中的菜单项 */
+.anniuzhuone {
+	background: linear-gradient(90deg, #307072 2%, #3b5d87 100%);
+	color: #fff;
+}
+
+/* 未选中的菜单项 */
+.anniuzhutow {
+	background: #282e47;
+	color: #a1a0b6;
+}
+
+/* 点击时缩小按钮的动画效果 */
+.menu-item:not(.anniuzhuone):active {
+	transform: scale(0.95);
+	background: linear-gradient(270deg, #e2f0ff 0%, #f3e8ff 50%, #ffffff 100%);
+	box-shadow: 0 4rpx 10rpx rgba(0, 0, 0, 0.2);
+}
+
+body {
+	padding-bottom: env(safe-area-inset-bottom);
+	margin-bottom: calc(-1 * env(safe-area-inset-bottom));
+}
+
+.risk {
+	color: #E71818;
+}
+.reduce {
+	color: #41C27D;
+}
+
+.ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+// 默认按钮
+.default-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50rpx;
+	border-radius: 8rpx;
+	padding: 0 32rpx;
+	background: rgba(26, 147, 236, 0.16);
+	border: 2rpx solid #8DA6BE;
+	font-size: 24rpx;
+	color: #DCDEDF;
+	opacity: 0.8;
+}
+// 重点按钮
+.primary-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8rpx;
+	height: 50rpx;
+	padding: 0 32rpx;
+	font-size: 24rpx;
+	background: linear-gradient(270deg, #1397F6 0%, #437EF0 99%, #437EF0 100%);
+	color: #FFFFFF;
+}
+
+.search-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 120rpx;
+	height: 44rpx;
+	border-radius: 8rpx;
+	color: #FFFFFF;
+	font-size: 20rpx;
+	background: linear-gradient(270deg, #1397F6 0%, #437EF0 99%, #437EF0 100%);
+}
+

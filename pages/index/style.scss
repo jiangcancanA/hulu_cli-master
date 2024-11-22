@@ -1,0 +1,237 @@
+// view {
+// 	box-sizing: border-box;
+// }
+.home-title {
+	display: flex;
+	align-items: center;
+	gap: 15rpx;
+	margin-bottom: 10rpx;
+}
+.home-index {
+	background-color: #1b1f2a;
+	padding: 30rpx 15rpx;
+	border-radius: 15rpx;
+	// margin-top: 20rpx;
+	.home-index-title {
+		display: flex;
+		gap: 20rpx;
+		align-items: center;
+	}
+	.home-index-right {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 10rpx;
+		justify-content: space-between;
+	}
+	.home-index-title-text {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		& > view:nth-child(1) {
+			color: #fff;
+			display: flex;
+			align-items: center;
+			gap: 10rpx;
+		}
+		& > view:nth-child(2) {
+			color: #929ea8;
+			display: flex;
+			align-items: center;
+			font-size: 25rpx;
+		}
+	}
+	.home-index-text {
+		display: flex;
+		align-items: center;
+		gap: 20rpx;
+		font-size: 24rpx;
+		& > view:nth-child(1) {
+			display: flex;
+			align-items: center;
+			gap: 10rpx;
+			border: 2rpx solid #48b483;
+			color: #48b483;
+			padding: 5rpx 10rpx;
+			border-radius: 10rpx;
+			background-color: rgba(51, 80, 85, 0.7);
+			.u-image__image {
+				margin-right: 2rpx;
+			}
+		}
+		& > view:nth-child(2) {
+			display: flex;
+			align-items: center;
+			gap: 10rpx;
+			border: 2rpx solid #e71818;
+			color: #e71818;
+			padding: 5rpx 10rpx;
+			border-radius: 10rpx;
+			background-color: rgba(81, 51, 68, 0.7);
+			.u-image__image {
+				margin-right: 2rpx;
+			}
+		}
+	}
+	.home-index-bottom {
+		margin-top: 26rpx;
+		font-size: 30rpx;
+
+		& > view:nth-child(1) {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		& > view:nth-child(2) {
+			padding-top: 4rpx;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+}
+.home-market {
+	background-color: #1b1f2a;
+	padding: 30rpx 15rpx;
+	border-radius: 15rpx;
+	margin-top: 20rpx;
+	.home-market-title {
+		color: #fff;
+		font-size: 32rpx;
+	}
+	.home-market-content {
+		margin-top: 20rpx;
+	}
+	.home-market-content-card {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 238rpx;
+		height: 110rpx;
+		margin-left: 20rpx;
+		flex-shrink: 0;
+		border: 2rpx solid #38b0f4;
+		border-radius: 15rpx;
+		padding: 0 32rpx;
+		color: #C6D4DF;
+		background: linear-gradient(270deg, rgba(55, 176, 244, 0.28) 0%, rgba(67, 157, 240, 0.28) 46%, rgba(44, 103, 255, 0.28) 100%);
+		&:first-child {
+			margin-left: 0px;
+		}
+		& > view:nth-child(1) {
+			display: flex;
+			align-items: center;
+			// gap: 6rpx;
+			// color: #fff;
+		}
+	}
+}
+.home-onLine {
+	background-color: #1b1f2a;
+	padding: 30rpx 15rpx;
+	border-radius: 15rpx;
+	margin-top: 20rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 10rpx;
+	& > view:nth-child(1) {
+		display: flex;
+		align-items: center;
+		gap: 20rpx;
+	}
+	.home-onLine-text {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		// margin-bottom: 6rpx;
+		// gap: 15rpx;
+		color: #fff;
+		& > view {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+	& > view:nth-child(2) {
+		color: #929ea8;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border-bottom: 2rpx solid #7e8991;
+		padding-bottom: 10rpx;
+	}
+}
+.home-event {
+	background-color: #1b1f2a;
+	padding: 30rpx 15rpx;
+	border-radius: 15rpx;
+	margin-top: 20rpx;
+	display: flex;
+	align-items: center;
+	gap: 30rpx;
+	& > view:nth-child(1) {
+		color: #fff;
+		font-size: 35rpx;
+		width: 100rpx;
+	}
+	& > view:nth-child(2) {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 10rpx;
+	}
+	.notice {
+		max-height: 84rpx;
+		display: -webkit-box; /* 使用 WebKit 的 flexbox 行框模型 */
+		-webkit-box-orient: vertical; /* 设置子元素的排列方向为垂直 */
+		-webkit-line-clamp: 2; /* 限制在一个块元素显示的文本的行数 */
+		overflow: hidden; /* 隐藏超出的内容 */
+		text-overflow: ellipsis; /* 用省略号表示被隐藏的文本 */
+	}
+}
+.home-ranking {
+	background-color: #1b1f2a;
+	padding: 30rpx 15rpx;
+	border-radius: 15rpx;
+	margin-top: 20rpx;
+	margin-bottom: 30rpx;
+	.home-ranking-title {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		color: #fff;
+		font-size: 35rpx;
+		& > view:nth-child(2) {
+			color: #929ea8;
+			font-size: 25rpx;
+			display: flex;
+			align-items: center;
+		}
+	}
+	.home-ranking-btn {
+		margin-top: 20rpx;
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		& > view {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+	.home-ranking-table {
+		margin-top: 15rpx;
+	}
+	.home-table-td {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}

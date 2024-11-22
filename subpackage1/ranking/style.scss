@@ -1,0 +1,55 @@
+* {
+	box-sizing: border-box;
+}
+.ranking {
+	padding-bottom: env(safe-area-inset-bottom);
+	margin-bottom: calc(-1 * env(safe-area-inset-bottom));
+	.ranking-header {
+		padding: 28rpx 26rpx 12rpx;
+		color: #fff;
+		.header-tabs {
+			display: flex;
+			align-items: center;
+			color: #DCDEDF;
+			margin-bottom: 18rpx;
+			font-size: 24rpx;
+			.tabs-text {
+				margin-right: 10rpx;
+			}
+			.tabs-tab {
+				display: flex;
+				align-items: center;
+				padding: 0rpx 22rpx;
+				height: 46rpx;
+				margin-right: 6rpx;
+				border-radius: 8rpx;
+				/* 确保边框和背景都有圆角 */
+				opacity: 1;
+				background: rgba(26, 147, 236, 0.16);
+				border: 1px solid #8DA6BE;
+			}
+	
+			.tab-active {
+				color: #1A9FFF;
+				background-color: #fff;
+				border: 1px solid #1993EB;
+				background: linear-gradient(270deg, rgba(25, 147, 235, 0.32) 0%, rgba(67, 147, 240, 0.32) 46%, rgba(57, 136, 255, 0.32) 100%);
+			}
+		}
+		.header-search {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			font-size: 24rpx;
+			color: #DCDEDF;
+			.search-left {
+				display: flex;
+				align-items: center;
+				// flex: 1;
+			}
+			.search-right {
+				color: #DCDEDF;
+			}
+		}
+	}
+}

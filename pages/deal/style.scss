@@ -1,0 +1,84 @@
+.deal {
+  .deal-panel {
+    background: #1B1F2A;
+    padding: 30rpx 22rpx 0;
+    margin-bottom: 24rpx;
+    .panel-header {
+      display: flex;
+      align-items: center;
+      padding-bottom: 16rpx;
+      margin-bottom: 32rpx;
+      border-bottom: 2rpx solid rgba(255, 255, 255, 0.12);
+      .header-avatar {
+        width: 76rpx;
+        height: 76rpx;
+        background-color: #fff;
+        margin-right: 22rpx;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+          // width: ;
+        }
+      }
+      .header-text {
+        color: #DCDEDF;
+        font-size: 28rpx;
+      }
+    }
+    .panel-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 0 90rpx;
+      color: #DCDEDF;
+      font-size: 32rpx;
+      .content-item {
+        margin-bottom: 48rpx;
+        .item-label {
+          margin-bottom: 8rpx;
+        }
+        &:nth-child(2n+1) {
+          width: 250rpx;
+        }
+        &:nth-child(2n) {
+          width: 170rpx;
+        }
+      }
+    }
+    .panel-operate {
+      display: flex;
+      align-items: space-between;
+      justify-content: space-between;
+      width: 334rpx;
+      height: 106rpx;
+      margin: 0 auto;
+      padding-bottom: 30rpx;
+      .operate-item {
+        .item-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 68rpx;
+          height: 68rpx;
+          border: 2rpx solid #4475AF;
+          background: #1C293A;
+          border-radius: 1998rpx;
+          overflow: hidden;
+          color: #DCDEDF;
+          font-size: 28rpx;
+          margin-bottom: 10rpx;
+        }
+        .item-text {
+          text-align: center;
+          color: #DCDEDF;
+          font-size: 24rpx;
+        }
+
+        .buy-active {
+          background: #4475AF;
+        }
+      }
+    }
+  }
+}
