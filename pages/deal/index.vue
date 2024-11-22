@@ -42,6 +42,13 @@
           >卖</view>
           <view class="item-text">卖出</view>
         </view>
+        <view class="operate-item" @click="openDealPopup">
+          <view class="item-icon"
+            :class="{'buy-active': buyActive === '单'}"
+            @click="changeDealType('单')"
+          >单</view>
+          <view class="item-text">查询</view>
+        </view>
       </div>
     </div>
 

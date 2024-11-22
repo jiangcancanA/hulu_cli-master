@@ -55,11 +55,11 @@
 					<View :class="tabBtnIndex == 2 ? 'btn-active' : 'btn-normal'" plain @click="tabBtn(2)">K线</View>
 					<View :class="tabBtnIndex == 3 ? 'btn-active' : 'btn-normal'" plain @click="tabBtn(3)">租赁</View>
 				</view>
-				<view style="display: flex; align-items: center;">
+				<!-- <view style="display: flex; align-items: center;">
 					<view class="tool" @click="tabBtn(5)">
 						<u-image width="28rpx" height="28rpx" src="@/static/image/amplify.png"></u-image>
 					</view>
-				</view>
+				</view> -->
 			</view>
 			<view>
 				<view class="details-index-texts">

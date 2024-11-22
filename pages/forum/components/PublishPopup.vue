@@ -31,6 +31,7 @@ export default {
         // width: '172rpx',
         color: '#C6D4DF',
         fontSize: '28rpx',
+        marginBottom: '14rpx',
         borderRadius: '16rpx',
         border: 'none',
         backgroundColor: 'rgba(81, 97, 138, 0.4)' // 输入框背景颜色
