@@ -52,7 +52,6 @@ export default {
     }
   },
   created() {
-    console.log(123123123123)
   },
   methods: {
     popupClose() {
